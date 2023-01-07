@@ -8,7 +8,7 @@ export default function Home() {
         <div className="background-gradient-pattern" />
       </div>
       <img
-        src="./bg.jpg"
+        src="./unified.jpg"
         className="background-gradient-dove absolute h-screen w-full object-cover"
         alt=""
       />
