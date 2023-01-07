@@ -6,9 +6,9 @@ import "../styles/tailwind.css";
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
-import Navbar from "./Navbar";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
+import Footer from "../components/Footer";
 
 export default function RootLayout({
   children,
@@ -41,8 +41,8 @@ export default function RootLayout({
         <WagmiConfig client={wagmiClient}>
           <RainbowKitProvider chains={chains}>
             <div className="mx-auto">
-              <Navbar />
               {children}
+              <Footer />
             </div>
           </RainbowKitProvider>
         </WagmiConfig>
