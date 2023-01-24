@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 
@@ -48,14 +50,17 @@ export default function Home() {
                 target="_blank"
               >
                 <button className="group relative inline-block cursor-pointer rounded-sm bg-[#c4fb60] p-px hover:bg-white">
-                  <div className="group absolute inline-block h-full w-full cursor-pointer rounded-sm bg-[#c4fb60] p-px opacity-50 blur-lg" />
+                  {/* <div className="group absolute inline-block h-full w-full cursor-pointer rounded-sm bg-[#c4fb60] p-px opacity-50 blur-lg" /> */}
 
-                  <span className="relative inline-block w-full whitespace-nowrap rounded-sm bg-black px-6 py-4 text-center text-base font-medium leading-4 tracking-wide text-white duration-200 group-hover:bg-white group-hover:text-dove">
-                    Join Now <span className="ml-1 font-normal">→</span>
+                  <span className="relative inline-block w-full whitespace-nowrap rounded-sm bg-black px-6 py-4 text-center text-xs font-medium uppercase leading-4 tracking-widest text-white duration-200 group-hover:bg-white group-hover:text-dove">
+                    Explore{" "}
+                    <span className="ml-1 rounded-sm bg-white/10 px-2 py-1 text-sm font-normal">
+                      ⌘K
+                    </span>
                   </span>
                 </button>
               </a>
-              <a
+              {/* <a
                 href="https://0xst.notion.site/Dove-Protocol-5a174626e63f4c26a30e753fc7460714"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -65,7 +70,7 @@ export default function Home() {
                     Learn More
                   </span>
                 </button>
-              </a>
+              </a> */}
             </div>
             {/* <div className="mt-32 flex h-12 items-center space-x-16">
                 <div className="flex flex-col">
