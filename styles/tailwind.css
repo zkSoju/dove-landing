@@ -26,9 +26,15 @@
   font-family: "Satoshi";
 }
 
+@font-face {
+  src: url(/Adhesion-Regular.otf);
+  font-weight: 400;
+  font-family: "Adhesion";
+}
+
 html,
 body {
-  background-color: #000612;
+  background-color: #000000;
   font-family: Satoshi, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
