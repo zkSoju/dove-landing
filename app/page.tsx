@@ -2,6 +2,9 @@
 
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
+import { Command } from "cmdk";
+import { useEffect, useState } from "react";
+import CommandMenu from "../components/CommandMenu";
 
 export default function Home() {
   return (
@@ -9,6 +12,7 @@ export default function Home() {
       {/* <div className="background-gradient absolute h-screen w-full opacity-50">
         <div className="background-gradient-pattern" />
       </div> */}
+      <CommandMenu />
       <img
         src="./bg.jpg"
         className="background-gradient-dove absolute h-screen w-full object-cover"
