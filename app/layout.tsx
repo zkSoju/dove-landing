@@ -42,7 +42,7 @@ export default function RootLayout({
           <RainbowKitProvider chains={chains}>
             <div className="mx-auto">
               {children}
-              <Footer />
+              {/* <Footer /> */}
             </div>
           </RainbowKitProvider>
         </WagmiConfig>

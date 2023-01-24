@@ -32,13 +32,13 @@ export default function Home() {
             </div>
           </div>
         </header> */}
-        <section className="max-x-6xl relative h-full py-10 text-white">
-          <div className="container flex h-full flex-col items-center justify-center">
+        <section className="relative h-full w-full py-10 text-white">
+          <div className="container flex h-full flex-col items-start justify-center">
             <p className="mb-8 text-xs uppercase tracking-[0.25em] text-[#c4fb60]">
-              [ solving liquidity frag ]
+              ✣ unified ✣
             </p>
-            <h2 className="mb-16 bg-clip-text text-center font-adhesion text-6xl text-white lg:text-9xl">
-              dove
+            <h2 className="mb-16 bg-clip-text text-center font-adhesion text-6xl tracking-tighter text-white lg:text-9xl">
+              liquidity
             </h2>
 
             <div className="flex items-center justify-center space-x-4">
@@ -51,7 +51,7 @@ export default function Home() {
                   <div className="group absolute inline-block h-full w-full cursor-pointer rounded-sm bg-[#c4fb60] p-px opacity-50 blur-lg" />
 
                   <span className="relative inline-block w-full whitespace-nowrap rounded-sm bg-black px-6 py-4 text-center text-base font-medium leading-4 tracking-wide text-white duration-200 group-hover:bg-white group-hover:text-dove">
-                    Enter Dove <span className="ml-1 font-normal">→</span>
+                    Join Now <span className="ml-1 font-normal">→</span>
                   </span>
                 </button>
               </a>
@@ -86,9 +86,8 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="relative mx-auto flex max-w-6xl flex-col justify-center overflow-hidden py-10 text-white">
+      {/* <section className="relative mx-auto flex max-w-6xl flex-col justify-center overflow-hidden py-10 text-white">
         <div className="mt-24" />
-        <div className="features-blur absolute left-60 -top-64 h-80 w-[48rem] opacity-20 blur-[160px]" />
         <div className="container flex flex-col items-center justify-center">
           <p className="text-xs uppercase tracking-widest text-[#c4fb60]">
             Right when you need it
@@ -215,7 +214,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
