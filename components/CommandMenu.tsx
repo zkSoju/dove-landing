@@ -26,26 +26,29 @@ const CommandMenu = () => {
     >
       <Command.Input
         placeholder="Type a command or search..."
-        className="w-full border border-[#c4fb60] bg-transparent p-6 text-white placeholder:text-white/50 focus:outline-none"
+        className="w-full border-b border-[#c4fb60] bg-transparent p-6 text-white placeholder:text-white/50 focus:outline-none"
       />
-      <Command.List>
-        <Command.Empty>No results found.</Command.Empty>
+      <div className="flex h-full w-full pt-2">
+        <Command.List className="w-full">
+          <Command.Empty>No results found.</Command.Empty>
 
-        <Command.Group className="px-1 py-2 text-white">
-          <Command.Item className="rounded-sm px-4 py-4 text-white/50 hover:bg-[#c4fb6050] hover:font-medium hover:text-white">
-            Provide liquidity
-          </Command.Item>
-          <Command.Item className="rounded-sm px-4 py-4 text-white/50 hover:bg-[#c4fb6050] hover:font-medium hover:text-white">
-            Swap assets
-          </Command.Item>
-          <Command.Separator />
-          <Command.Item className="rounded-sm px-4 py-4 text-white/50 hover:bg-[#c4fb6050] hover:font-medium hover:text-white">
-            Learn more
-          </Command.Item>
-        </Command.Group>
-        {/* 
+          <Command.Group className="text-white">
+            <Command.Item className="rounded-sm px-4 py-4 text-white/50 hover:bg-[#c4fb6050] hover:font-medium hover:text-white">
+              Provide liquidity
+            </Command.Item>
+            <Command.Item className="rounded-sm px-4 py-4 text-white/50 hover:bg-[#c4fb6050] hover:font-medium hover:text-white">
+              Swap assets
+            </Command.Item>
+            <Command.Separator />
+            <Command.Item className="rounded-sm px-4 py-4 text-white/50 hover:bg-[#c4fb6050] hover:font-medium hover:text-white">
+              Learn more
+            </Command.Item>
+          </Command.Group>
+          {/* 
         <Command.Item>Apple</Command.Item> */}
-      </Command.List>
+        </Command.List>
+        <div className="h-96 w-full border border-[#c4fb60]"></div>
+      </div>
     </Command.Dialog>
   );
 };
