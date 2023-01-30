@@ -4,9 +4,13 @@ import { FaGithub } from "react-icons/fa";
 export default function Home() {
   return (
     <>
-      {/* <div className="background-gradient absolute h-screen w-full opacity-50">
-        <div className="background-gradient-pattern" />
-      </div> */}
+      <div className="pointer-events-none fixed z-[100] h-screen w-full">
+        <img
+          src="./dove_companion.png"
+          alt=""
+          className="absolute bottom-0 -right-36 scale-75"
+        />
+      </div>
       <div className="mx-auto min-h-screen max-w-6xl px-6 lg:px-12">
         <header className="max-x-6xl relative z-50 bg-transparent">
           <div className="w-full">
