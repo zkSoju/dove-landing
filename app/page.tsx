@@ -88,10 +88,11 @@ export default function Home() {
         <div className="mt-24" />
         {/* <div className="features-blur absolute left-60 -top-64 h-80 w-[48rem] opacity-20 blur-[160px]" /> */}
         <div className="container flex flex-col items-center justify-center">
-          <p className="text-xs uppercase tracking-widest text-sky-400">
-            Right when you need it
-          </p>
-          <h1 className="mt-4 text-5xl">Strapped Liquidity</h1>
+          <h1 className="mt-4 text-center text-5xl">
+            Strapped liquidity
+            <br />
+            whenever you need it
+          </h1>
         </div>
         <div className="container mt-16 grid grid-cols-12 gap-8 rounded-sm px-16">
           <div className="tab-gradient col-span-7 flex h-[30rem] flex-col space-y-4 rounded-sm p-px shadow-dove">
@@ -104,9 +105,9 @@ export default function Home() {
               <div className="relative p-8">
                 <div className="flex h-full flex-col justify-end ">
                   <div className="flex flex-col">
-                    <p className="text-xs uppercase tracking-widest text-orange-500">
+                    {/* <p className="text-xs uppercase tracking-widest text-orange-500">
                       Secure
-                    </p>
+                    </p> */}
                     <p className="mt-2 text-2xl">Minimize your risks</p>
                     <p className="mt-2 text-olive">
                       Leverages cross-chain messaging
@@ -189,9 +190,9 @@ export default function Home() {
               <div className="relative p-8">
                 <div className="flex h-full flex-col justify-end">
                   <div className="flex flex-col">
-                    <p className="text-xs uppercase tracking-widest text-orange-500">
+                    {/* <p className="text-xs uppercase tracking-widest text-orange-500">
                       Extensive
-                    </p>
+                    </p> */}
                     <p className="mt-2 text-2xl">Expanding to all chains</p>
                     <p className="mt-2 pr-12 text-olive">
                       Trade on the most popular and emerging
@@ -205,7 +206,7 @@ export default function Home() {
         </div>
         <div className="mt-24 flex flex-row space-x-8">
           <div className="flex h-96 w-full flex-col items-start justify-center rounded-sm bg-olive/5 p-16">
-            <h1 className="text-4xl">Learn to swap assets</h1>
+            <h1 className="mb-4 text-4xl">Learn to swap assets</h1>
             <button className="mt-2 rounded-sm bg-white px-6 py-2 text-sm text-black">
               Learn more
             </button>
