@@ -9,7 +9,6 @@ export default function Home() {
       </div> */}
       <div className="mx-auto min-h-screen max-w-6xl px-6 lg:px-12">
         <header className="max-x-6xl relative z-50 bg-transparent">
-          <div className="border-b border-white/10"></div>
           <div className="w-full">
             <div className="container flex h-28 items-center justify-between">
               <img src="./dove.png" alt="logo" className="h-12" />
