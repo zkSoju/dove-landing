@@ -8,7 +8,7 @@ export default function Home() {
         <img
           src="./dove_companion.png"
           alt=""
-          className="absolute bottom-0 -right-36 scale-75"
+          className="absolute bottom-16 right-0 w-96 object-cover"
         />
       </div>
       <div className="mx-auto min-h-screen max-w-6xl px-6 lg:px-12">
