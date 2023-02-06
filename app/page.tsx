@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <>
       <div className="pointer-events-none fixed z-[100] h-screen w-full">
-        <img
+        {/* <img
           src="./dove_companion.png"
           alt=""
           className="absolute bottom-16 right-0 w-96 object-cover"
-        />
+        /> */}
       </div>
       <div className="mx-auto min-h-screen max-w-6xl px-6 lg:px-12">
         <header className="max-x-6xl relative z-50 bg-transparent">
