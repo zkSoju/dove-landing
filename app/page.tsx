@@ -1,9 +1,12 @@
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
     <>
+      <div className="absolute top-0 left-0 mt-24 h-[140vh] w-full gradient-mask-t-40">
+        <Image src="/dove_bg.png" fill alt="" className="object-cover" />
+        <div className="relative h-[140vh] w-full bg-black opacity-50" />
+      </div>
       <div className="pointer-events-none fixed z-[100] h-screen w-full">
         {/* <img
           src="./dove_companion.png"
@@ -11,84 +14,30 @@ export default function Home() {
           className="absolute bottom-16 right-0 w-96 object-cover"
         /> */}
       </div>
-      <div className="mx-auto min-h-screen max-w-6xl px-6 lg:px-12">
-        <header className="max-x-6xl relative z-50 bg-transparent">
-          <div className="w-full">
-            <div className="container flex h-28 items-center justify-between">
-              <img src="./dove.png" alt="logo" className="h-12" />
-              <a
-                href="https://dove.whitenoise.rs/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <button className="group inline-block cursor-pointer rounded-sm bg-gradient-to-tr from-sky-400 via-green-600 to-orange-500 p-px hover:bg-gradient-to-r">
-                  <span className="transition-color  inline-block w-full whitespace-nowrap rounded-sm bg-dove px-6 py-3 text-center text-sm font-medium leading-4 tracking-wide text-white duration-200 group-hover:bg-white group-hover:text-dove">
-                    Enter App
-                  </span>
-                </button>
-              </a>
-            </div>
+      <header className="fixed bottom-0 z-50 w-full bg-transparent px-8">
+        <div className="flex w-full items-center justify-between rounded-t-2xl bg-dove/50 px-8 py-4">
+          <img src="./dove.png" alt="logo" className="h-12" />
+          <div>
+            <p className="text-white">Search</p>
           </div>
-        </header>
+        </div>
+      </header>
+      <div className="max-w-8xl mx-auto h-[160vh] px-16">
         <section className="max-x-6xl relative mt-16 py-10 text-white">
-          <div className="container grid-cols-3 md:grid">
-            <div className="col-span-2">
-              <h2 className="text-gradient bg-clip-text text-6xl text-transparent lg:text-7xl">
-                Unified liquidity, <br />
-                accessible anywhere.
-              </h2>
-              <p className="my-12 w-11/12 text-xl text-olive">
-                Swap and trade crypto assets with minimized risks and maximized
-                security across all chains.
-              </p>
-              <div className="flex items-center space-x-4">
-                <a
-                  href="https://dove.whitenoise.rs/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <button className="group relative inline-block cursor-pointer rounded-sm bg-gradient-to-tr from-sky-400 via-green-600 to-orange-500 p-px hover:bg-white">
-                    <div className="group absolute inline-block h-full w-full cursor-pointer rounded-sm bg-gradient-to-tr from-sky-400 via-green-600 to-orange-500 p-px opacity-50 blur-lg" />
-
-                    <span className="transition-color relative inline-block w-full whitespace-nowrap rounded-sm bg-dove px-6 py-4 text-center text-base font-medium leading-4 tracking-wide text-white duration-200 group-hover:bg-white group-hover:text-dove">
-                      Enter Dove <span className="ml-1 font-normal">→</span>
-                    </span>
-                  </button>
-                </a>
-                <a
-                  href="https://0xst.notion.site/Dove-Protocol-5a174626e63f4c26a30e753fc7460714"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <button className="group inline-block cursor-pointer rounded-sm bg-white/10 from-white to-white p-px hover:bg-gradient-to-r">
-                    <span className="transition-color  inline-block w-full whitespace-nowrap rounded-sm bg-dove px-6 py-4 text-center text-base font-medium leading-4 tracking-wide text-white duration-200 group-hover:bg-white group-hover:text-dove">
-                      Learn More
-                    </span>
-                  </button>
-                </a>
-              </div>
-              {/* <div className="mt-32 flex h-12 items-center space-x-16">
-                <div className="flex flex-col">
-                  <p className="text-xl font-medium">$0</p>
-                  <p className="text-white/50">Total Liquidity</p>
-                </div>
-                <div className="hidden h-full w-px bg-white/10 lg:block" />
-                <div className="flex flex-col">
-                  <p className="text-xl font-medium">$0</p>
-                  <p className="text-white/50">Total Volume</p>
-                </div>
-                <div className="hidden h-full w-px bg-white/10 lg:block" />
-                <div className="flex flex-col">
-                  <p className="text-xl font-medium">0</p>
-                  <p className="text-white/50">Total Pairs</p>
-                </div>
-              </div> */}
-            </div>
+          <div className="flex flex-col items-center">
+            <h2 className="text-center text-6xl text-white lg:text-7xl">
+              Unified liquidity,
+              <br />
+              accessible anywhere.
+            </h2>
+            <p className="my-12 text-center text-xl text-olive">
+              Swap and trade crypto assets with minimized risks and <br />
+              maximized security across all chains.
+            </p>
           </div>
         </section>
       </div>
       <section className="relative mx-auto flex max-w-6xl flex-col justify-center overflow-hidden py-10 text-white">
-        <div className="mt-24" />
         {/* <div className="features-blur absolute left-60 -top-64 h-80 w-[48rem] opacity-20 blur-[160px]" /> */}
         <div className="container flex flex-col items-center justify-center">
           <h1 className="mt-4 text-center text-5xl">
@@ -207,14 +156,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-24 flex flex-row space-x-8">
+        {/* <div className="mt-24 flex flex-row space-x-8">
           <div className="flex h-96 w-full flex-col items-start justify-center rounded-sm bg-olive/5 p-16">
             <h1 className="mb-4 text-4xl">Learn to swap assets</h1>
             <button className="mt-2 rounded-sm bg-white px-6 py-2 text-sm text-black">
               Learn more
             </button>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
